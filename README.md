@@ -39,14 +39,30 @@ The framework has been validated on **MNIST, Fashion-MNIST, and CIFAR-10 dataset
 
 ## 📂 Project Structure
 ├── Adversarial_attacks_Defense.ipynb # Adversarial training & evaluation
+
 ├── FL_on_MNIST_Dataset.ipynb # Federated learning experiments
+
 ├── MNIST_DIGIT_train_distilled_student_teacher.ipynb # Knowledge distillation
+
 ├── MNIST_Feed_Forward.ipynb # Baseline feed-forward models
+
 ├── Tensors_and_Operations.ipynb # PyTorch tensor manipulations & utilities
+
 ├── MLP_training.ipynb # Multi-layer perceptron training
+
 ├── train_mnist_fashion_digit.ipynb # Fashion-MNIST experiments
+
 └── Uncertainty_cifar.ipynb # Uncertainty quantification on CIFAR-10
 
+
+---
+
+## 📊 Datasets
+- **MNIST**: Handwritten digits (0–9)  
+- **Fashion-MNIST**: Clothing item images for benchmarking  
+- **CIFAR-10**: Color images across 10 classes for advanced evaluation  
+
+---
 
 ---
 
@@ -62,3 +78,62 @@ The framework has been validated on **MNIST, Fashion-MNIST, and CIFAR-10 dataset
 ```bash
 git clone https://github.com/yourusername/Robust-FL-DeepLearning.git
 cd Robust-FL-DeepLearning
+
+---
+
+## 📊 Datasets
+- **MNIST**: Handwritten digits (0–9)  
+- **Fashion-MNIST**: Clothing item images for benchmarking  
+- **CIFAR-10**: Color images across 10 classes for advanced evaluation  
+
+---
+
+## ⚙️ Installation & Usage
+1. **Clone the repository:**  
+```bash
+git clone https://github.com/yourusername/Robust-FL-DeepLearning.git
+cd Robust-FL-DeepLearning
+Create a virtual environment:
+
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run experiments: Open any .ipynb notebook in Jupyter Notebook or VSCode.
+
+🌟 Research Highlights
+End-to-end deep learning framework for robust, interpretable, and federated AI.
+
+Comparison of centralized, student-teacher, and federated models on standard datasets.
+
+Robustness evaluation against state-of-the-art adversarial attacks.
+
+Uncertainty quantification to improve reliability in real-world scenarios.
+
+Modular design enabling extension to new datasets, attacks, or architectures.
+
+🛠 Technical Stack
+Programming: Python 3.10
+
+Deep Learning: PyTorch, NumPy
+
+Visualization: Matplotlib, Seaborn
+
+Techniques: Adversarial Training, Knowledge Distillation, Federated Learning, Bayesian Neural Networks, Uncertainty Estimation
+
+🔬 Applications
+Academic research in robust, trustworthy, and explainable AI.
+
+Deployment in privacy-preserving smart systems.
+
+Benchmarking and developing adversarial defense strategies.
+
+📄 License
+This project is licensed under the MIT License.
