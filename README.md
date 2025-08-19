@@ -1,96 +1,64 @@
-Robust and Federated Deep Learning: Adversarial Defense, Uncertainty, and Knowledge Distillation
+# Robust and Federated Deep Learning: Adversarial Defense, Uncertainty, and Knowledge Distillation
 
-🚀 Project Overview
+![Python](https://img.shields.io/badge/Python-3.10-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-1.13-red) ![License](https://img.shields.io/badge/License-MIT-green)
 
-This project develops robust and federated deep learning pipelines combining multiple advanced ML techniques for reliable, interpretable, and distributed AI. Key objectives include:
+## 📖 Project Overview
+This project presents an **integrated deep learning framework** for developing robust, interpretable, and distributed AI models. It combines multiple cutting-edge methodologies to tackle challenges in:  
 
-Strengthening models against adversarial attacks.
+- **Adversarial Robustness:** Evaluating and defending models against malicious perturbations.  
+- **Knowledge Distillation:** Transferring knowledge from large teacher networks to compact student models while retaining predictive performance.  
+- **Federated Learning:** Enabling decentralized model training across multiple nodes for **privacy-preserving AI**.  
+- **Uncertainty Quantification:** Estimating model confidence to improve reliability in high-stakes decision-making.  
 
-Reducing model size while maintaining performance using knowledge distillation.
+The framework has been validated on **MNIST, Fashion-MNIST, and CIFAR-10 datasets**, demonstrating improvements in robustness, generalization, and computational efficiency.
 
-Enabling federated learning for privacy-preserving distributed training.
+---
 
-Quantifying model uncertainty and confidence.
+## 🔑 Key Contributions
+1. **Adversarial Defense Pipelines:**  
+   - Implemented **FGSM, PGD, and Carlini-Wagner attacks** to evaluate model vulnerabilities.  
+   - Integrated defense mechanisms including **adversarial training and gradient masking**.
 
-The pipelines are implemented on MNIST, Fashion-MNIST, and CIFAR-10 datasets, integrating both classical and deep neural network architectures.
+2. **Knowledge Distillation and Student-Teacher Models:**  
+   - Developed distilled networks to reduce model size while preserving accuracy.  
+   - Applied **temperature scaling** and **soft-label transfer** techniques for efficient learning.
 
-🔑 Key Features
+3. **Federated Learning Implementations:**  
+   - Designed a **central server-client architecture** to simulate distributed training.  
+   - Ensured **data privacy** by keeping local datasets on client nodes and aggregating model weights centrally.
 
-Adversarial Attacks & Defense: Test and improve model resilience.
+4. **Uncertainty Modeling:**  
+   - Implemented **Monte Carlo Dropout** and **Bayesian neural networks** to estimate predictive uncertainty.  
+   - Enhanced decision-making reliability in adversarial or ambiguous inputs.
 
-Knowledge Distillation: Student-teacher networks for compact, efficient models.
+5. **Comprehensive Evaluation Metrics:**  
+   - Accuracy, Precision, Recall, F1-Score, Area Under Curve (AUC), and robustness measures under adversarial scenarios.  
+   - Comparative evaluation across **centralized, distilled, and federated architectures**.
 
-Federated Learning: Train models across distributed nodes without sharing raw data.
+---
 
-Uncertainty Estimation: Measure confidence to improve decision reliability.
+## 📂 Project Structure
+├── Adversarial_attacks_Defense.ipynb # Adversarial training & evaluation
+├── FL_on_MNIST_Dataset.ipynb # Federated learning experiments
+├── MNIST_DIGIT_train_distilled_student_teacher.ipynb # Knowledge distillation
+├── MNIST_Feed_Forward.ipynb # Baseline feed-forward models
+├── Tensors_and_Operations.ipynb # PyTorch tensor manipulations & utilities
+├── MLP_training.ipynb # Multi-layer perceptron training
+├── train_mnist_fashion_digit.ipynb # Fashion-MNIST experiments
+└── Uncertainty_cifar.ipynb # Uncertainty quantification on CIFAR-10
 
-Model Architectures: MLPs, feed-forward networks, and xLSTM-based networks.
 
-Evaluation Metrics: Accuracy, Precision, Recall, F1-Score, and AUC.
+---
 
-📂 Project Structure
-├── Adversarial_attacks_Defense.ipynb
-├── FL_on_MNIST_Dataset.ipynb
-├── MNIST_DIGIT_train_distilled_student_teacher.ipynb
-├── MNIST_Feed_Forward.ipynb
-├── Tensors_and_Operations.ipynb
-├── MLP_training.ipynb
-├── train_mnist_fashion_digit.ipynb
-└── Uncertainty_cifar.ipynb
+## 📊 Datasets
+- **MNIST**: Handwritten digits (0–9)  
+- **Fashion-MNIST**: Clothing item images for benchmarking  
+- **CIFAR-10**: Color images across 10 classes for advanced evaluation  
 
-📊 Datasets
+---
 
-MNIST
-
-Fashion-MNIST
-
-CIFAR-10
-
-⚙️ Installation & Usage
-
-Clone the repository:
-
-git clone https://github.com/csislam/Robust-FL-DeepLearning.git
+## ⚙️ Installation & Usage
+1. **Clone the repository:**  
+```bash
+git clone https://github.com/yourusername/Robust-FL-DeepLearning.git
 cd Robust-FL-DeepLearning
-
-
-Create a virtual environment:
-
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Run notebooks: Open .ipynb files in Jupyter Notebook or VSCode.
-
-🌟 Highlights
-
-End-to-end pipeline for centralized and federated deep learning.
-
-Integrates robustness, uncertainty, and knowledge distillation for research-grade models.
-
-Benchmarking on standard datasets with reproducible results.
-
-🎯 Applications
-
-Research in robust and explainable AI.
-
-Smart systems requiring distributed and privacy-preserving ML.
-
-Benchmarking adversarial defenses and uncertainty modeling.
-
-💻 Tech Stack
-
-Languages: Python
-
-Frameworks: PyTorch, NumPy, Matplotlib
-
-Techniques: Deep Learning, Federated Learning, Adversarial Training, Knowledge Distillation, Uncertainty Estimation
-
-📄 License
-
-This project is licensed under the MIT License.
